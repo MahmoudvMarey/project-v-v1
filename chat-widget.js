@@ -2,7 +2,20 @@
 const scriptTag = document.currentScript;
 const iframeHeight = scriptTag.getAttribute("data-iframe-height");
 const website = scriptTag.getAttribute("website");
+const id = scriptTag.getAttribute("id");
 function createButtonX() {
+  
+  async function GetCustomize() {
+    const response = await fetch(`https://www.virsay.com/api/widget?id=${id}`);
+    const data = await response.json();
+    return data;
+  }
+  async function s() {
+    const theCustome = await GetCustomize();
+    setUserEmail(theCustome?.[0].email);
+    console.log(userEmail);
+  }
+  
   const container = document.createElement("div");
   container.style.display = "inline-block";
   container.style.verticalAlign = "middle";
@@ -47,6 +60,7 @@ function createButtonX() {
       iframeContainer.style.display === ""
         ? "block"
         : "none";
+    s();
   });
 
   // Append elements to the document body
