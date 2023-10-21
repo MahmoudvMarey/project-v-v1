@@ -12,18 +12,13 @@ function createButtonX() {
     return data;
   }
   async function s() {
-    // const theCustome = await GetCustomize();
-    // // setUserEmail(theCustome?.[0].email);
-    // console.log(theCustome?.[0].email);
-    // // alert(theCustome?.[0].email)
-
-    try {
     const theCustome = await GetCustomize();
-    console.log('API Response:', theCustome);
-    console.log('Email:', theCustome?.[0].email);
-  } catch (error) {
-    console.error('Error in s() function:', error);
-  }
+    // setUserEmail(theCustome?.[0].email);
+    console.log(theCustome?.[0].email);
+    // alert(theCustome?.[0].email)
+
+
+ 
   }
   
   const container = document.createElement("div");
