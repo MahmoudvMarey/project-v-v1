@@ -17,7 +17,7 @@ function createButtonX() {
     console.log(theCustome?.[0].email);
     // alert(theCustome?.[0].email)
   }
-  s();
+  
   const container = document.createElement("div");
   container.style.display = "inline-block";
   container.style.verticalAlign = "middle";
@@ -62,6 +62,7 @@ function createButtonX() {
       iframeContainer.style.display === ""
         ? "block"
         : "none";
+    s();
     
   });
 
