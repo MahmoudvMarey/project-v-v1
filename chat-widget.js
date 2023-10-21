@@ -12,10 +12,18 @@ function createButtonX() {
     return data;
   }
   async function s() {
+    // const theCustome = await GetCustomize();
+    // // setUserEmail(theCustome?.[0].email);
+    // console.log(theCustome?.[0].email);
+    // // alert(theCustome?.[0].email)
+
+    try {
     const theCustome = await GetCustomize();
-    // setUserEmail(theCustome?.[0].email);
-    console.log(theCustome?.[0].email);
-    // alert(theCustome?.[0].email)
+    console.log('API Response:', theCustome);
+    console.log('Email:', theCustome?.[0].email);
+  } catch (error) {
+    console.error('Error in s() function:', error);
+  }
   }
   
   const container = document.createElement("div");
@@ -74,7 +82,4 @@ function createButtonX() {
   document.body.appendChild(button);
 }
 
-// createButtonX();
- document.addEventListener('DOMContentLoaded', () => {
-    createButtonX(); // Call your function when the DOM is ready
-  });
+createButtonX();
