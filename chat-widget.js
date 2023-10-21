@@ -74,15 +74,10 @@ function createButtonX() {
     
   });
 
-    const button = document.createElement("button");
-  button.textContent = "Click Me"; // Button text
-
-  // Event listener for button click
+    // Event listener for button click
   button.addEventListener("click", function () {
     s(); // Call the s() function when the button is clicked
   });
-    document.body.appendChild(button); // Append the button to the document body
-
 
   // Append elements to the document body
   container.appendChild(img);
