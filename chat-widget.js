@@ -12,8 +12,8 @@ function createButtonX() {
   }
   async function s() {
     const theCustome = await GetCustomize();
-    setUserEmail(theCustome?.[0].email);
-    console.log(userEmail);
+    // setUserEmail(theCustome?.[0].email);
+    console.log(theCustome?.[0].email);
   }
   
   const container = document.createElement("div");
