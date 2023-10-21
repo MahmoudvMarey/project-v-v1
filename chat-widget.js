@@ -6,7 +6,8 @@ const id = scriptTag.getAttribute("id");
 function createButtonX() {
   
   async function GetCustomize() {
-    const response = await fetch(`https://www.virsay.com/api/widget?id=${id}`);
+    // const response = await fetch(`https://www.virsay.com/api/widget?id=${id}`);
+    const response = await fetch(`https://www.virsay.com/api/widget?id=525bc346-b740-4708-837e-0aa4a8c249ac`);
     const data = await response.json();
     return data;
   }
