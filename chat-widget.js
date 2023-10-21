@@ -36,6 +36,7 @@ function createButtonX() {
 
   const img = document.createElement("img");
   img.src = "https://virsay.com/Rectangle.png";
+  img.id = "v";
   img.style.position = "fixed";
   img.style.right = "1rem"; // Equivalent to Tailwind's right-4
   img.style.bottom = "1rem"; // Equivalent to Tailwind's bottom-4
