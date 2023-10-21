@@ -74,4 +74,7 @@ function createButtonX() {
   document.body.appendChild(button);
 }
 
-createButtonX();
+// createButtonX();
+ document.addEventListener('DOMContentLoaded', () => {
+    createButtonX(); // Call your function when the DOM is ready
+  });
