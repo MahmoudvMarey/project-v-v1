@@ -14,9 +14,9 @@ function createButtonX() {
     const theCustome = await GetCustomize();
     // setUserEmail(theCustome?.[0].email);
     console.log(theCustome?.[0].email);
-    alert(theCustome?.[0].email)
+    // alert(theCustome?.[0].email)
   }
-  
+  s();
   const container = document.createElement("div");
   container.style.display = "inline-block";
   container.style.verticalAlign = "middle";
@@ -61,7 +61,7 @@ function createButtonX() {
       iframeContainer.style.display === ""
         ? "block"
         : "none";
-    s();
+    
   });
 
   // Append elements to the document body
